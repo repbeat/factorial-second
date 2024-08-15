@@ -1,0 +1,8 @@
+def factorial(n)
+  return 1 if n <= 1
+  n * factorial(n - 1)
+end
+
+puts "Введите число:"
+number = gets.chomp.to_i
+puts "Факториал числа #{number} равен #{factorial(number)}"
